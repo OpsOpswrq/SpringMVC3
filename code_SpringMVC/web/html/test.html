@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe测试</title>
+    <script type="text/javascript">
+        function goto(){
+            let value = document.getElementById("getUrl").value;
+            document.getElementById("iframe1").src = value;
+        }
+    </script>
+</head>
+<body>
+<p>
+    <input type="text" value="" id="getUrl">
+    <input type="button" value="提交" onclick="goto()">
+</p>
+<iframe id="iframe1" style="width: 100%;height:300px"></iframe>
+</body>
+</html>
